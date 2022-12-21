@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>User Management System</title>
+  <link th:href="@{/css/bootstrap.css}" rel="stylesheet" />
+</head>
+<body>
+  <!-- navbar start -->
+  <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <a class="navbar-brand" th:href="@{/}">User Management System</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" aria-current="page" th:href="@{/list}">List</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+  <br>
+  <br>
+
+  <!-- content start -->
+  <h1 class="text-center"> Welcome to User Management System</h1>
+  <p class="lead text-center">
+    This Web Page Demo User Management System Application.<br>
+    Provides user list, creation, and deletion functions,<br>
+    Click the <mark>List</mark> menu at the top to check the function.
+  </p>
+  <!-- content end -->
+
+  <script type="text/javascript" th:src="@{/js/bootstrap.js}"></script>
+</body>
+
+</html>
