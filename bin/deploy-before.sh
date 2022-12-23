@@ -4,4 +4,4 @@ if [ -d /home/ec2-user/build ]; then
 fi
 sudo mkdir -vp /home/ec2-user/build/
 
-sudo /apache-tomcat-9.0.59/bin/shutdown.sh
+sudo systemctl stop tomcat8
